@@ -1,0 +1,23 @@
+<template name="race">
+
+  <h2>Race: {{ title }}</h2>
+  <a href="{{ pathFor 'track' track }}"><strong>Track: {{ track.title }}</strong></a>
+
+  <div class="row">
+  
+    <div class="col-md-6">
+      <strong>Naam: {{ player1.name }}</strong>
+      {{#with player 74 }}
+        {{> racePlayer }}
+      {{/with}}
+    </div>
+
+    <div class="col-md-6">
+      <strong>Naam: {{ player2.name }}</strong>
+      {{#with player 75 }}
+        {{> racePlayer }}
+      {{/with}}
+    </div>
+  </div>
+  
+</template>

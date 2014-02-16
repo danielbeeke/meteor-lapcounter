@@ -1,0 +1,1 @@
+Laps = new Meteor.Collection('laps');

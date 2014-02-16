@@ -1,0 +1,14 @@
+<template name="races">
+  <h1>Races</h1>
+
+  <a href="{{ pathFor 'createRace' }}" class="btn btn-success"><i class="glyphicon glyphicon-plus"></i> Nieuwe race</a>
+
+  <ul class="list-group">
+    {{#each races}}
+      <li class="list-group-item">
+        <a href="{{ pathFor 'race' }}">{{ title }}</a>
+      </li>
+    {{/each}}  
+  </ul>
+
+</template>

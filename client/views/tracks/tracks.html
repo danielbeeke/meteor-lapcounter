@@ -1,0 +1,14 @@
+<template name="tracks">
+  <h1>Tracks</h1>
+
+  <a href="{{ pathFor 'createTrack' }}" class="btn btn-success"><i class="glyphicon glyphicon-plus"></i> Nieuwe track</a>
+
+  <ul class="list-group">
+    {{#each tracks}}
+      <li class="list-group-item">
+        <a href="{{ pathFor 'track' }}">{{ title }}</a>
+      </li>
+    {{/each}}  
+  </ul>
+
+</template>

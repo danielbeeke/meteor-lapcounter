@@ -1,0 +1,14 @@
+<template name="racePlayer">
+
+  <h3>Totaal: {{ total }}</h3>
+  {{#if fastestLap }}
+      <strong>Snelste ronde: {{ fastestLap.index }}, {{ fastestLap.roundTime }}</strong>
+  {{/if}}
+
+  <div class="list-group">
+    {{#each laps}}
+      <a href="#" class="list-group-item {{ isFirst }}">#{{ index }} <span class="badge">{{ formatDate roundTime "seconds" }}</span></a>
+    {{/each}}
+  </div>
+
+</template>

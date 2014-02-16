@@ -1,0 +1,48 @@
+<template name="createRace">
+  <h1>Maak een nieuwe race aan</h1>
+
+  <form role="form">
+    <div class="form-group">
+      <label for="title">Titel</label>
+      <input type="text" class="form-control" id="title" placeholder="Titel">
+    </div>
+
+    <label for="tracks">Track</label>
+
+    {{#each tracks}}
+      <div class="radio">
+        <label>
+          <input type="radio" name="tracks" value="{{ _id }}">
+          {{ title }}
+        </label>
+      </div>
+    {{/each}}
+
+    <div class="col-md-6">
+      <label>Speler 1</label>
+      {{#each players}}
+        <div class="radio">
+          <label>
+            <input type="radio" name="player1" value="{{ _id }}">
+            {{ name }}
+          </label>
+        </div>
+      {{/each}}
+    </div>
+
+    <div class="col-md-6">
+      <label>Speler 2</label>
+      {{#each players}}
+        <div class="radio">
+          <label>
+            <input type="radio" name="player2" value="{{ _id }}">
+            {{ name }}
+          </label>
+        </div>
+      {{/each}}
+    </div>
+
+    <a href="#" type="submit" class="btn btn-success add_race">Race!</button>
+  </form>
+
+</template>

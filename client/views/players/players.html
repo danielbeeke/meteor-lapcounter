@@ -1,0 +1,14 @@
+<template name="players">
+  <h1>Spelers</h1>
+
+  <a href="{{ pathFor 'createPlayer' }}" class="btn btn-success"><i class="glyphicon glyphicon-plus"></i> Nieuwe speler</a>
+
+  <ul class="list-group">
+    {{#each players}}
+      <li class="list-group-item">
+        <a href="{{ pathFor 'player' }}">{{ name }}</a>
+      </li>
+    {{/each}}  
+  </ul>
+
+</template>
