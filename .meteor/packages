@@ -10,3 +10,5 @@ iron-router
 bootstrap3-sass
 scss
 moment
+font-awesome
+Dropzonejs

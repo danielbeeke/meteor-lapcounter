@@ -1,0 +1,12 @@
+<template name="cars">
+  <h1>Auto's</h1>
+
+  <a href="{{ pathFor 'createCar' }}" class="btn btn-success"><i class="glyphicon glyphicon-plus"></i> Nieuwe auto</a>
+
+  <ul class="list-group">
+    {{#each cars}}
+      {{> carTeaser}}
+    {{/each}}  
+  </ul>
+
+</template>

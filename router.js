@@ -7,6 +7,26 @@ Router.map(function () {
     path: '/'
   })
 
+  // Cars
+
+  this.route('cars', {
+    path: '/cars'
+  })
+
+  this.route('car', {
+    path: '/cars/:_id',
+
+    data: function () {
+      return Cars.findOne({ _id: this.params._id })
+    }
+  })
+
+  this.route('createCar', {
+    path: '/car/add'
+  })
+
+  // Track
+
   this.route('tracks', {
     path: '/tracks'
   })
@@ -23,6 +43,8 @@ Router.map(function () {
     path: '/track/add'
   })
 
+  // Players
+
   this.route('players', {
     path: '/players'
   })
@@ -38,6 +60,8 @@ Router.map(function () {
   this.route('createPlayer', {
     path: '/player/add'
   })
+
+  // Races
 
   this.route('races', {
     path: '/races'

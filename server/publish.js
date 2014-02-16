@@ -13,3 +13,7 @@ Meteor.publish(null, function() {
 Meteor.publish(null, function() {
   return Tracks.find();
 });
+
+Meteor.publish(null, function() {
+  return Cars.find();
+});

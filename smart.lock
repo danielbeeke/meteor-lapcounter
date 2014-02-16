@@ -4,7 +4,9 @@
     "basePackages": {
       "iron-router": {},
       "bootstrap3-sass": {},
-      "moment": {}
+      "moment": {},
+      "font-awesome": {},
+      "Dropzonejs": {}
     },
     "packages": {
       "iron-router": {
@@ -21,6 +23,16 @@
         "git": "https://github.com/acreeger/meteor-moment.git",
         "tag": "v2.5.1",
         "commit": "8c9bc5d3fc96705057737cb9743d555417f6e551"
+      },
+      "font-awesome": {
+        "git": "https://github.com/nate-strauser/meteor-font-awesome.git",
+        "tag": "v4.0.3",
+        "commit": "61e9361384347547ae144f8228faa4deffda23db"
+      },
+      "Dropzonejs": {
+        "git": "https://github.com/devonbarrett/meteor-dropzone.git",
+        "tag": "v1.0.1",
+        "commit": "aa0e15055a519e72a97d02cffad4b052e840433d"
       },
       "scss": {
         "git": "https://github.com/fourseven/meteor-scss.git",

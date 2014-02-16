@@ -1,0 +1,25 @@
+<template name="raceTeaser">
+  <li class="list-group-item">
+    <h4 class="title">{{ title }}</h4>
+
+    {{#with player1 }}
+      <label><i class="fa fa-user"></i></label>
+      {{ name }}
+    {{/with}}
+
+    {{#with player2 }}
+      <label><i class="fa fa-user"></i></label>
+      {{ name }}
+    {{/with}}
+
+    <span class="label label-info pull-right">
+      <label>Laps: </label>
+      <strong>{{ totalLaps }}</strong>
+    </span>
+
+    <span><i class="fa fa-road"></i> {{ track.title }}</span>
+
+    <span><i class="fa fa-tachometer"></i> {{ fastestLap.time }}</span>
+
+  </li>
+</template>

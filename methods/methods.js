@@ -33,6 +33,10 @@ Meteor.methods({
 
   add_player: function (player) {
     return Players.insert(player)
+  },
+
+  add_car: function (car) {
+    return Cars.insert(car)
   }
 
 })

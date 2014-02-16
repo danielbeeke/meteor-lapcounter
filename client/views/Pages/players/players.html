@@ -5,9 +5,7 @@
 
   <ul class="list-group">
     {{#each players}}
-      <li class="list-group-item">
-        <a href="{{ pathFor 'player' }}">{{ name }}</a>
-      </li>
+      {{> playerTeaser}}
     {{/each}}  
   </ul>
 
