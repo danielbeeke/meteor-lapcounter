@@ -1,9 +1,0 @@
-{
-  "packages": {
-    "iron-router": {},
-    "bootstrap3-sass": {},
-    "moment": {},
-    "font-awesome": {},
-    "Dropzonejs": {}
-  }
-}

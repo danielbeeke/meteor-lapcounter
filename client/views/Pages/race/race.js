@@ -20,7 +20,9 @@ Template.race.rendered = function() {
   $('body:not(".attached")').addClass('attached').on('keyup',function(event) {
     var race = Router.current().data()
 
-    if (event.keyCode == 75 || event.keyCode == 74) {
+    console.log(event.keyCode)
+
+    if (event.keyCode == 49 || event.keyCode == 50) {
       Meteor.call('add_lap', event.keyCode, race._id)
     }
   })

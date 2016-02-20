@@ -5,10 +5,9 @@
 
 standard-app-packages
 insecure
-preserve-inputs
-iron-router
-bootstrap3-sass
-scss
-moment
-font-awesome
-Dropzonejs
+iron:router
+twbs:bootstrap
+fourseven:scss
+momentjs:moment
+fortawesome:fontawesome
+standard-minifiers
